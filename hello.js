@@ -4,7 +4,7 @@ let playerChoice = null, computerChoice = null, playerScore = 0, computerScore =
 const rock = document.querySelector(".rock");
 const paper = document.querySelector(".paper");
 const scissor = document.querySelector(".scissor");
-const Player = document.querySelector(".player");
+const player = document.querySelector(".player");
 const computer = document.querySelector(".computer");
 const result = document.querySelector(".result");
 const winner = document.querySelector(".winner");
@@ -12,7 +12,7 @@ const score = document.querySelector(".score");
 
 rock.addEventListener("click", function(e) {
     playerChoice = e.target.value;
-    Player.innerHTML = `Player choice = ${playerChoice}`;
+    player.innerHTML = `Player choice = ${playerChoice}`;
     computerChoice = getComputerChoice();
     computer.innerHTML = `Computer choice = ${computerChoice}`;
     playRound(playerChoice, computerChoice);
@@ -20,7 +20,7 @@ rock.addEventListener("click", function(e) {
 
 paper.addEventListener("click", function(e) {
     playerChoice = e.target.value;
-    Player.innerHTML = `Player choice = ${playerChoice}`;
+    player.innerHTML = `Player choice = ${playerChoice}`;
     computerChoice = getComputerChoice();
     computer.innerHTML = `Computer choice = ${computerChoice}`;
     playRound(playerChoice, computerChoice);
@@ -28,7 +28,7 @@ paper.addEventListener("click", function(e) {
 
 scissor.addEventListener("click", function(e) {
     playerChoice = e.target.value;
-    Player.innerHTML = `Player choice = ${playerChoice}`;
+    player.innerHTML = `Player choice = ${playerChoice}`;
     computerChoice = getComputerChoice();
     computer.innerHTML = `Computer choice = ${computerChoice}`;
     playRound(playerChoice, computerChoice);
